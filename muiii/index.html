@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <title></title>
+    <script src="js/mui.min.js"></script>
+    <link href="css/mui.min.css" rel="stylesheet"/>
+    <script type="text/javascript" charset="utf-8">
+      	mui.init();
+    </script>
+	<style>
+		.mui-bar-nav{
+			background-color: #1B82D2;
+			color: #fcfcfc;
+		}
+		.mui-bar-nav span{
+			position: relative;
+			top: 25%;
+			
+		}
+		 
+		.mui-col-xs-3{
+			 
+			margin-left: 20px;
+			margin-right: 10px;
+			 
+			 
+		}
+		.font1{
+			font-weight: bolder;
+		}
+		.font2{
+			font-size: 5px;
+			text-align: center;
+			color: #ACACB4;
+		}
+		.secondul{
+			margin-top: 20px;
+		}
+	</style>
+</head>
+<body>
+	<!-- 主界面菜单同时移动 -->
+		<!-- 侧滑导航根容器 -->
+		<div class="mui-off-canvas-wrap mui-draggable">
+			<!-- 主页面容器 -->
+			<div class="mui-inner-wrap">
+				 
+				<!-- 主页面标题 -->
+				<header class="mui-bar mui-bar-nav " >
+					<span class="mui-pull-left">朋友</span>
+					 <span class="mui-pull-right">+</span>
+					 <span class="mui-pull-right">🎊</span>
+					 <span class="mui-pull-right">❤</span>
+				</header>
+				<nav class="mui-bar mui-bar-tab">
+					<a class="mui-tab-item mui-active">
+						<span class="mui-icon mui-icon-home"></span>
+						<span class="mui-tab-label">首页</span>
+					</a>
+					<a class="mui-tab-item">
+						<span class="mui-icon mui-icon-phone"></span>
+						<span class="mui-tab-label">财富</span>
+					</a>
+					<a class="mui-tab-item">
+						<span class="mui-icon mui-icon-email"></span>
+						<span class="mui-tab-label">口碑</span>
+					</a>
+					<a class="mui-tab-item">
+						<span class="mui-icon mui-icon-gear"></span>
+						<span class="mui-tab-label">朋友</span>
+					</a>
+					<a class="mui-tab-item">
+						  <span class="mui-icon mui-icon-person"></span>
+						<span class="mui-tab-label">我的</span>
+					</a>
+				</nav>
+				<!-- 主页面内容容器 -->
+				<div class="mui-content mui-scroll-wrapper">
+					<div class="mui-scroll">
+						<!-- 主界面具体展示内容 -->
+					    <ul class="mui-table-view mui-grid-view">
+					    	<li class="mui-table-view-cell mui-media mui-col-xs-3">
+					    		<a href="#">
+					    			<img class="mui-media-object" src="icon/friends_icon1.png">
+					    			<div class="mui-media-body font1">生活号</div>
+									<div class=" font2">钉钉更新了</div>
+					    		</a>
+					    	</li>
+					    	<li class="mui-table-view-cell mui-media mui-col-xs-3">
+					    		<a href="#">
+					    			<img class="mui-media-object" src="icon/friends_icon2.png">
+					    			<div class="mui-media-body font1">小程序</div>
+									<div class="  font2">发现更多精品服务</div>
+					    		</a>
+					    	</li>
+							<li class="mui-table-view-cell mui-media mui-col-xs-3">
+								<a href="#">
+									<img class="mui-media-object" src="icon/friends_icon3.png">
+									<div class="mui-media-body font1">生活圈</div>
+									<div class=" font2">和朋友分享生活</div>
+								</a>
+							</li>
+					    </ul>
+						
+						<ul class="mui-table-view secondul">
+							<li class="mui-table-view-cell mui-media">
+								<a href="javascript:;">
+									<img class="mui-media-object mui-pull-left" src="icon/friends_icon4.png">
+									<div class="mui-media-body">
+										服务提醒（含支付助手）
+										<p class="mui-ellipsis">空气污染，送健康果咯</p>
+									</div>
+								</a>
+							</li>
+							<li class="mui-table-view-cell mui-media">
+								<a href="javascript:;">
+									<img class="mui-media-object mui-pull-left" src="icon/friends_icon5.png">
+									<div class="mui-media-body">
+										蚂蚁财富
+										<p class="mui-ellipsis">您有财富开运红包待领取</p>
+									</div>
+								</a>
+							</li>
+							<li class="mui-table-view-cell mui-media">
+								<a href="javascript:;">
+									<img class="mui-media-object mui-pull-left" src="icon/friends_icon6.png">
+									<div class="mui-media-body">
+									    手机充值
+										<p class="mui-ellipsis">快开学的你是否也有这样的苦恼</p>
+									</div>
+								</a>
+							</li>
+							<li class="mui-table-view-cell mui-media">
+								<a href="javascript:;">
+									<img class="mui-media-object mui-pull-left" src="icon/friends_icon7.png">
+									<div class="mui-media-body">
+									    浦发银行信用卡
+										<p class="mui-ellipsis">[消息提醒]您有一波半价美食待领取</p>
+									</div>
+								</a>
+							</li>
+							<li class="mui-table-view-cell mui-media">
+								<a href="javascript:;">
+									<img class="mui-media-object mui-pull-left" src="icon/friends_icon8.png">
+									<div class="mui-media-body">
+									    浦发银行信用卡
+										<p class="mui-ellipsis">[消息提醒]您有一波半价美食待领取</p>
+									</div>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+		   	 <div class="mui-off-canvas-backdrop"></div>
+			</div>
+		</div>
+		<script>
+			
+		</script>
+	
+</body>
+</html>
