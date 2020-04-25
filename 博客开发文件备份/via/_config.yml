@@ -1,0 +1,15 @@
+# main menu navigation
+menu:
+  Home: /
+  About: /about
+  Archives: /archives
+
+# 可自订配色方案
+color:
+  main_color: "#ff7315"
+
+# 设置网页icon的地址
+icon: img/icon.png
+avator: img/avator.jpg
+authors: 任我行
+

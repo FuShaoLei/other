@@ -1,0 +1,19 @@
+<div id="menu-outer" class="nav">
+    <div id="menu-inner" class="menu-nav">
+      <% Object.keys(theme.menu).forEach(key => { %>
+        <a href="<%=theme.menu[key]%>" class="nav-item hvr-underline-from-center"><%=key%></a>
+      <% }); %>
+    </div>
+    <div class="menu-icon">
+      <ul>
+        <li>
+          <a href="https://github.com" class="nav-icon"><i class="fab fa-weibo"></i></a>
+        </li>
+        <li>
+          <a href="https://github.com" class="nav-icon"><i class="fab fa-github"></i>
+            </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+ 

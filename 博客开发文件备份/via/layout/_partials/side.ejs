@@ -1,0 +1,35 @@
+<%
+var categoriesList1 = list_categories({ show_count: false,depth:1, style: ""});
+<!--分割字符串-->
+var arraylist=[];
+arraylist=categoriesList1.split(",");
+%>
+<div class="side-main">
+    <div class="side-inner">
+        
+        <%-partial('_partials/head-menu')%>
+    
+    <%if(site.categories.length){%>
+    <%for(var j=0;j<arraylist.length;j++){ %>
+        <div class="cate-item">
+
+       
+    <div class="cate-name">
+        <%-trim(strip_html(arraylist[j]))%>
+    </div>  
+    
+    <% site.posts.sort('date', -1).each(posty => { %>
+    <%if(posty.categories.data.length>0){%>
+    <%if(posty.categories.data[0].name===trim(strip_html(arraylist[j]))){%>
+        <div class="cate-title">
+            <a href="<%=url_for(posty.path)%>"><%=posty.title%></a>
+        </div>
+    <%}%>
+        <%}%>
+    <% }); %>
+ </div>
+    <%};%>
+    <%};%>
+    
+</div>
+</div>

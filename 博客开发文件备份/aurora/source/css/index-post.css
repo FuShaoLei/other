@@ -1,0 +1,56 @@
+#recent-posts{
+    margin-top: 20px;
+}
+.recent-post-item{
+    border: 3px solid #333;
+    padding: 40px;
+    margin-bottom: 20px;
+}
+.index-post-title{
+    text-align: right;
+    font-weight: bolder;
+}
+.index-post-time{
+    background: #333;
+    width: 90px;
+    padding: 5px 10px;
+    color: #fcfcfc;
+    position: relative;
+    top: -40px;
+    left: -40px;
+}
+
+/*设置页码的样式*/
+#paginator{
+    color: #333;
+    margin-top: 50px;
+    min-width: 100%;
+    min-height: 100px;
+    text-align: center;
+  }
+  #paginator a{
+   color: #333;
+  }
+  #paginator .current{
+    padding: 10px;
+    background: #D0D1D2;
+   }
+  .page-number{
+    margin-right: 20px;
+    margin-left: 20px;
+    padding: 10px;
+  }
+  .page-number:hover{
+    background: #EEEEEE;
+  }
+  .next,
+  .prev{
+      text-transform: uppercase;
+    margin-right: 20px;
+    margin-left: 20px;
+    padding: 10px;
+  }
+  .next:hover,
+  .prev:hover{
+    background: #EEEEEE;
+  }

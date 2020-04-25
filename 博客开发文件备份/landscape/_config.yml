@@ -1,0 +1,49 @@
+# Header
+menu:
+  Home: /
+  Archives: /archives
+rss: /atom.xml
+
+# Content
+excerpt_link: Read More
+fancybox: true
+
+# Sidebar
+sidebar: right
+widgets:
+- category
+- tag
+- tagcloud
+- archive
+- recent_posts
+
+# 博客相关
+blog_name: 任我行的秘密小窝
+blog_author: 任我行
+
+# 可自定义颜色
+a_color: "#333" #超链接颜色
+card_color: "#333" #卡片颜色（就是文章 以及旁边的那些分类，标签等）
+text_color: "#333" #字体颜色
+bg_color: "#333" #网页背景颜色
+footer_color: 007ACC #底部的颜色
+
+# display widgets at the bottom of index pages (pagination == 2)
+index_widgets:
+# - category
+# - tagcloud
+# - archive
+
+# widget behavior
+archive_type: 'monthly'
+show_count: false
+
+# Miscellaneous
+google_analytics:
+gauges_analytics:
+favicon: images/icon.png
+banner: images/bg01.jpg
+twitter:
+google_plus:
+fb_admins:
+fb_app_id:

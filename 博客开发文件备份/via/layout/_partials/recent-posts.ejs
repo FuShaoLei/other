@@ -1,0 +1,22 @@
+<% if (page.posts.length > 0) { %>
+<div class="index-posts">
+  <% page.posts.sort('date', -1).limit(10).each(post => { %>
+  <div class="index-post-item">
+    <div class="index-post-date">
+      <time datetime="<%=post.date.toJSON()%>">
+        <%=date(post.date)%>
+      </time>
+    </div>
+    <div class="index-post-title">
+      <a href="<%=url_for(post.path)%>"><%=post.title%></a>
+    </div>  
+  <a href="<%=url_for(post.path)%>">
+    <div class="index-post-read-more">
+      阅读更多
+    </div>
+  </a>
+
+  </div>
+  <% }); %>
+</div>
+<% } %>

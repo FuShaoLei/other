@@ -1,0 +1,28 @@
+
+# html lang
+language: en
+
+# main menu navigation
+menu:
+  Home: /
+  About: /about
+  Contact: /contact
+  Archives: /archives
+
+# stylesheets loaded in the <head>
+stylesheets:
+- /css/rua.css
+- /css/base.css
+
+# scripts loaded in the end of the body
+scripts:
+- /js/rua.js
+
+color:  # 主体颜色配置，可以从这里寻找启发： https://www.webdesignrankings.com/resources/lolcolors/
+  body_bg_color: "#eee"
+  navbar_bg_color: "#2f4154"
+  navbar_text_color: "white"
+  text_color: "#3c4858"
+  link_color: "#3c4858"
+  link_hover_color: "#1abc9c"
+  board_color: "#fff"

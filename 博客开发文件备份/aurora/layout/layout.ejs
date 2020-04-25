@@ -1,0 +1,36 @@
+
+<%
+var pageTitle = page.title || config.subtitle || '';
+if (is_archive()) pageTitle = 'Archives';
+if (is_tag()) pageTitle = 'Tag: ' + page.tag;
+if (is_category()) pageTitle = 'Category: ' + page.category;
+if (is_month()) pageTitle += ': ' + page.month + '/' + page.year;
+if (is_year()) pageTitle += ': ' + page.year;
+pageTitle += ' [ ' + config.title + ' ]';
+%>
+
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+<head>
+  <meta charset="UTF-8">
+  <title><%=pageTitle%></title>
+  <!--引入css文件-->
+   <!--图标库-->
+   <link rel="stylesheet" href="https://cdn.bootcss.com/font-awesome/5.11.2/css/all.css">
+  <%- css(['css/aurora.css','css/post.css','css/index-post.css','css/archive.css']) %>
+</head>
+<body>
+<%-partial('_partials/header')%>
+
+<div class="index">
+  <div id="content-outer" class="content-out">
+    <div id="content-inner" class="content-in">
+      <%- body %>
+    </div>
+  </div>
+</div>
+
+<!--引入js文件-->
+<%- js([ 'js/aurora.js']) %>
+</body>
+</html>

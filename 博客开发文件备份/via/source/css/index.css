@@ -1,0 +1,29 @@
+.index-post-item {
+    padding: 20px;
+    height: 100px;
+    background: #ffffff;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.index-post-title{
+    font-size: 1.2em;
+}
+
+.index-post-date {
+    font-size: 0.7em;
+    color: #bbb;
+}
+.index-post-read-more{
+    margin-top: 30px;
+    width: 65px;
+    background: #f5f5f5;;
+    padding: 5px;
+    border-radius: 7px;
+    font-size: 0.8em;
+    color: rgba(0,0,0,0.7);
+    text-align: center;
+}
+.index-post-read-more:hover{
+    background: #EEEEEE;
+}

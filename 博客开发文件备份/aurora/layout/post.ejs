@@ -1,0 +1,18 @@
+
+<article id="post">
+  <div class="post-time">
+    <time datetime="<%=page.date.toJSON()%>">
+         <%=date(page.date)%>
+     </time>
+ </div>
+  <p class="post-title"><%=page.title%></p>
+  <%-page.content%>
+</article>
+<div class="post-toc">
+    <i class="fas fa-list"></i>
+  <%- toc(page.content,{list_number:false,max_depth: 2}) %>
+</div>
+
+<div id="paginator">
+  <%-paginator()%>
+</div>
