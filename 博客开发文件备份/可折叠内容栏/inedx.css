@@ -1,0 +1,42 @@
+body{
+    background-color: #6a1b9a;
+}
+button.accordion{
+    cursor: pointer;
+    border:none;
+    outline: none;
+    width: 100%;
+    text-align: left;
+    background-color: transparent;
+    color: #fff;
+    padding: 8px;
+    margin: 4px 0;
+    border-radius: 4px;
+    transition: 0.3s;
+}
+button.accordion:hover{
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+button.accordion.active{
+    background-color: #fff;
+    color: #000;
+    border-radius: 4px 4px 0 0;
+}
+div.panel{
+    background-color:rgba(255, 255, 255, 0.8);
+    color: #000;
+    border-radius: 0 0 4px 4px;
+    overflow: hidden;
+    opacity: 0;
+    max-height: 0;
+    transition: 0.3s;
+    padding:0 8px;
+    margin:0;
+}
+div.panel.show{
+    opacity: 1;
+    max-height: 500px;
+    padding:8px;
+    margin:2px 0 4px;
+}
